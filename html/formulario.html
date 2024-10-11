@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>Formulario de Registro</title>
+</head>
+<body>
+
+<div class="container mt-5">
+    <h1>Formulario de Registro</h1>
+    <form>
+        
+        <div class="form-group mt-5">
+            <div class="input-group mb-3">
+                <samp class="input-group-text">Nombre y Apellido</samp>
+                <input type="text" id="nombre" class="form-control" placeholder="Nombre" required>
+                <input type="text" id="apellido" class="form-control" placeholder="Apellido" required>
+            </div>
+        </div>
+
+        
+        <div class="form-group row">
+            <div class="col">
+                <label for="correo">Correo</label>
+                <input type="email" id="correo" class="form-control" placeholder="nombre@ejemplo.com" required>
+            </div>
+            <div class="col">
+                <label for="contraseña">Contraseña</label>
+                <input type="password" id="contraseña" class="form-control" placeholder="Contraseña" required>
+            </div>
+        </div>
+
+
+        <div class="form-group">
+            <label for="direccion">Dirección</label>
+            <input type="text" id="direccion" class="form-control" placeholder="Dirección" required>
+        </div>
+
+        
+        <div class="form-group">
+            <label for="descripcion">Descripción</label>
+            <textarea id="descripcion" class="form-control" placeholder="Descripción" rows="3" required></textarea>
+        </div>
+
+
+        <div class="form-group row ">
+            <div class="col">
+                <label for="departamento">cuidad</label>
+                <select id="departamento" class="form-select" required>
+                    <option value="">Selecciona una cuidad</option>
+                    <option value="departamento1">cuidad 1</option>
+                    <option value="departamento2">cuidad 2</option>
+                </select>
+            </div>
+            <div class="col">
+                <label for="departamento">Departamento</label>
+                <select id="departamento" class="form-select" required>
+                    <option value="">Selecciona un departamento</option>
+                    <option value="departamento1">Departamento 1</option>
+                    <option value="departamento2">Departamento 2</option>
+                </select>
+            </div>
+            <div class="col">
+                <input type="text" id="codigo-area" class="form-control" placeholder="Código de Área" required>
+            </div>
+        </div>
+
+    
+        <div class="form-group row">
+            <div class="col">
+                <label>¿Cómo prefieres ser contactado?</label><br>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="contacto" id="email" value="email" required>
+                    <label class="form-check-label" for="email">Email</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="contacto" id="telefono" value="telefono" required>
+                    <label class="form-check-label" for="telefono">Teléfono</label>
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="autorizacion" required>
+                    <label class="form-check-label" for="autorizacion">
+                        Autorizo el tratamiento de mis datos
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Registrar</button>
+    </form>
+</div>
+
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+
+
+
+
